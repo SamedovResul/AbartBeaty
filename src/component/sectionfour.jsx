@@ -65,19 +65,19 @@ import 'font-awesome/css/font-awesome.min.css';
                 <div className="social-media">
                   <a href="">
                     <i className="fa fa-facebook"></i>
-                    <span>@AbartBeaty</span>
+                    <span>@AbartBeauty</span>
                   </a>
                   <a href="">
                     <i className="fa fa-instagram"></i>
-                    <span>@AbartBeaty</span>
+                    <span>@AbartBeauty</span>
                   </a>
                   <a href="">
                     <i className="fa fa-whatsapp"></i>
-                    <span>@AbartBeaty</span>
+                    <span>@AbartBeauty</span>
                   </a>
                   <a href="">
                     <i class="fa fa-envelope"></i>
-                    <span>@AbartBeaty</span>
+                    <span>@AbartBeauty</span>
                   </a>
                 </div>
               </div>
