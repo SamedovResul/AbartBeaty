@@ -19,6 +19,8 @@
   padding: 0px 20px;
 }
 
+
+
 .nav-section .logo{
   background-color: white;
   width: 20%;
@@ -28,6 +30,25 @@
   justify-content: space-around;
   border-radius: 20px;
 }
+
+
+@media(max-width:991px){
+  .nav-section{
+    height: 60px;
+  }
+  .nav-section .logo{
+    width: 30%;
+  }
+}
+
+
+@media(max-width:450px){
+  .nav-section .logo{
+    width: 35%;
+  }
+}
+
+
 
 .nav-section ul{
   display: flex;
@@ -41,9 +62,19 @@
   font-weight: 600;
 }
 
+
 .nav-section ul li a{
   color: white;
   text-decoration: none;
+}
+
+@media(max-width:991px){
+  .nav-section ul li a{
+    font-size: 25px;
+  }
+  .nav-section ul {
+    margin: 0px;
+  }
 }
 
 .nav-section 
@@ -51,14 +82,10 @@
   width: 25%;
 }
 
-
 .nav-section 
 .logo img:nth-of-type(2){
   width: 50%;
 }
-
-
-
 
 
 .sectionOne > div{
@@ -67,6 +94,18 @@
   background-size: cover;
   height: 70vh;
   position: relative;
+}
+
+@media(max-width:991px){
+  .sectionOne > div{
+    height: 50vh;
+  }
+}
+
+@media(max-width:600px){
+  .sectionOne > div{
+    height: 25vh;
+  }
 }
 
 .sectionOne  div::before{
@@ -163,16 +202,10 @@
 @media(max-width:600px){
   .sectionTwo
   .animate{
-    height: 1000px;
+    height: 900px;
   }
 }
 
-@media(max-width:500px){
-  .sectionTwo
-  .animate{
-    height: 1150px;
-  }
-}
 
 
 /* section three */
@@ -228,6 +261,28 @@
   text-transform: uppercase;
 }
 
+@media(max-width:500px){
+
+  .sectionThree h4{
+    font-size: 40px;
+  }
+
+  .sectionThree h4 span{
+    font-size: 120px;
+  }
+}
+
+@media(max-width:450px){
+
+  .sectionThree h4{
+    font-size: 35px;
+  }
+
+  .sectionThree h4 span{
+    font-size: 100px;
+  }
+}
+
 /* four section */
 
 
@@ -237,6 +292,20 @@
   height: 600px;
 }
 
+
+@media(max-width:768px){
+  .sectionFour
+  .animate{
+    height: 1000px;
+  }
+}
+
+@media(max-width:600px){
+  .sectionFour
+  .animate{
+    height: 1600px;
+  }
+}
 .sectionFour
 .text-box{
   text-align: center;

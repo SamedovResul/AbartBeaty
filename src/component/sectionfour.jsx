@@ -51,7 +51,6 @@ import 'font-awesome/css/font-awesome.min.css';
                   {transitions((style, item) => (
                     <a.div style={style}>
                       <div style={{ backgroundImage: `url(${item.css})` }} >
-                        <p> {item.txt} </p>
                       </div>
                     </a.div>
                   ))}
