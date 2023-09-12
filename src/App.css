@@ -1,38 +1,355 @@
-.App {
+
+@font-face {
+  font-family: "DancingScript";
+  src: local("DancingScript"),
+   url("./component/font/DancingScript-Medium.ttf") format("truetype");
+  font-weight: medium;
+}
+
+.nav-section{
+  height: 100px;
+  background-color: #f38dab;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.nav-section .logo{
+  background-color: white;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+
+.nav-section ul{
+  display: flex;
+  padding: 0px;
+}
+
+.nav-section ul li{
+  list-style: none;
+  margin: 0px 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-section ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-section 
+.logo img:nth-of-type(1){
+  width: 25%;
+}
+
+
+.nav-section 
+.logo img:nth-of-type(2){
+  width: 50%;
+}
+
+
+
+
+
+.sectionOne > div{
+  background-image: url('./component/img/headimg.png');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+
+.sectionOne  div::before{
+  position: absolute;
+  content: '';
+  height: 250px;
+  width: 100%;
+  background-image: linear-gradient(#fff0,#ffffff,hsl(0deg 0% 100%));
+  bottom: -90px;
+}
+
+
+/* section two */
+.sectionTwo{
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionTwo .txt{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animate .list{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.animate .list > div{
+  position: absolute;
+  will-change: transform, width, height, opacity;
+  padding: 15px;
+}
+
+.animate .list > div > div{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* text-transform: uppercase; */
+  font-size: 10px;
+  /* line-height: 10px; */
+  border-radius: 4px;
+  box-shadow: 0px 10px 50px -10px #f38dab;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animate .list > div > div p {
+  font-size: 30px;
+  font-family: "DancingScript";
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.animate .txt h1{
+  color: #f38dab;
+}
+
+
+
+.sectionTwo
+.animate{
+  height: 400px;
+}
+
+
+
+.sectionTwo
+.text-box h3{
+  color: #f38dab;
+  font-size: 45px;
+  margin: 10px auto 70px auto;
+}
+
+.sectionTwo
+.text-box{
+  padding: 20px 0px;
+  text-align: center;
+}
+
+@media(max-width:768px){
+  .sectionTwo
+  .animate{
+    height: 900px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media(max-width:600px){
+  .sectionTwo
+  .animate{
+    height: 1000px;
+  }
+}
+
+@media(max-width:500px){
+  .sectionTwo
+  .animate{
+    height: 1150px;
+  }
+}
+
+
+/* section three */
+
+
+.sectionThree{
+  height: 500px;
+  background-image: url('./component/img/bgImg.png');
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+
+.sectionThree::after{
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(#fff0,#ffffff,hsl(0deg 0% 100%));
+  bottom: 0px;
+}
+
+
+.sectionThree::before{
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(#ffffff,#ffffff00,hsl(0deg 0% 100% / 0%));
+  top: 0px;
+}
+
+
+.sectionThree{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  margin: 0px auto 80px auto;
+}
+
+.sectionThree h4{
+  color:  white;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0px auto 60px auto;
+  font-family: "DancingScript";
+}
+
+.sectionThree h4 span{
+  font-size: 170px;
+  text-transform: uppercase;
+}
+
+/* four section */
+
+
+
+.sectionFour
+.animate{
+  height: 600px;
+}
+
+.sectionFour
+.text-box{
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  margin-top: 30px;
+}
+
+
+.sectionFour
+.text-box h2{
+  color: #f38dab;
+  margin: 30px auto 20px auto;
+  font-size: 45px;
+}
+
+
+.sectionFour
+.social-media{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 0px;
+}
+
+.sectionFour
+.social-media a{
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
+  text-decoration: none;
+  color: #f38dab;
+}
+
+.sectionFour
+.social-media a i{
+  font-size: 50px;
+}
+
+.sectionFour
+.social-media a span {
+  font-size: 20px;
+}
+
+
+/* footer */
+
+.footer-section{
+  margin-top: 40px;
+  padding: 20px 0px;
+  background-color:#f38dab;
+}
+
+.footer-section
+.col-md-12{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-section
+.col-md-12 img{
+  width: 25%;
+  margin: 15px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+
+@media(max-width:991px){
+  .footer-section
+  .col-md-12 img{
+    width: 35%;
+  }
+}
+
+@media(max-width:567px){
+  .footer-section
+  .col-md-12 img{
+    width: 55%;
+    margin: 20px auto 60px auto;
+  }
+}
+
+.footer-section
+.col-md-12 p{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Calibri light";
+}
+
+.ul-box p{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ul-box ul{
+  padding-left: 0px;
+}
+
+.ul-box ul li {
+  list-style: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ul-box ul li a{
+  color: white;
+  text-decoration: none;
 }
