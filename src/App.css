@@ -101,9 +101,15 @@
   position: relative;
 }
 
+@media(min-width:1300px) and (max-width:1700px){
+  .sectionOne > div{
+    height: 80vh;
+  }
+}
+
 @media(max-width:991px){
   .sectionOne > div{
-    height: 50vh;
+    height: 65vh;
   }
 }
 
@@ -314,8 +320,14 @@
   height: 600px;
 }
 
+@media(max-width:1200px){
+  .sectionFour
+  .animate{
+    height: 800px;
+  }
+}
 
-@media(max-width:768px){
+@media(max-width:991px){
   .sectionFour
   .animate{
     height: 1000px;
@@ -326,6 +338,13 @@
   .sectionFour
   .animate{
     height: 1600px;
+  }
+}
+
+@media(max-width:500px){
+  .sectionFour
+  .animate{
+    height: 1700px;
   }
 }
 .sectionFour
